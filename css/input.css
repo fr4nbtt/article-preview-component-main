@@ -2,32 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* COLOR PALETTE */
-  --very-dark-grayish-blue: hsl(217, 19%, 35%);
-  --desaturated-dark-blue: hsl(214, 17%, 51%);
-  --grayish-blue: hsl(212, 23%, 69%);
-  --light-grayish-blue: hsl(210, 46%, 95%);
-
-  /* TYPOGRAPHY */
-  --font-size-body: 13px;
-}
-
 /*  */
 
 body {
-  font-size: var(--font-size-body);
-  color: var(--very-dark-grayish-blue);
-  background-color: var(--light-grayish-blue);
+  @apply bg-light-grayish-blue text-very-dark-grayish-blue font-manrope
+   text-body font-medium h-screen flex flex-col justify-center items-center;
 }
 
 main {
+  @apply flex flex-col items-center justify-center w-full h-full max-w-7xl px-6;
 }
 
 /*  */
 
 .article-card {
-  @apply bg-white rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer;
+  @apply bg-white rounded-xl cursor-pointer aspect-[3/4] max-w-lg overflow-clip;
 }
 
 .article-card:hover {
@@ -38,6 +27,14 @@ main {
   @apply w-full h-[200px] object-cover;
 }
 
+.article-card-title {
+  @apply font-bold text-base;
+}
+
+.article-body {
+  @apply px-1 pt-8 pb-4 flex flex-col gap-1;
+}
+
 /* Attribution */
 
 .attribution {
@@ -45,7 +42,7 @@ main {
 }
 
 .attribution a {
-  color: var(--grayish-blue);
+  @apply text-grayish-blue;
 }
 
 /*

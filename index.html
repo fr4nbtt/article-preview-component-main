@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -13,28 +19,32 @@
     <script src="js/script.js" defer></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
-  <body class="h-screen flex flex-col justify-center items-center">
-    <main class="flex items-center justify-center w-full max-w-7xl px-6">
+  <body>
+    <main>
       <!-- Article -->
       <article class="article-card">
         <!-- Article Header -->
         <header>
           <img src="images/drawers.jpg" alt="" />
-          <h2>
+        </header>
+        <!-- Article Body -->
+        <section class="article-body">
+          <h2 class="article-card-title">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h2>
-        </header>
-        <!-- Article Body -->
-        <section>
           <p>
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
+          <!-- Article Footer -->
+          <div>
+            <p>Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+            <span>Share</span>
+          </div>
         </section>
-        <!-- Article Footer -->
-        <footer>Michelle Appleton 28 Jun 2020 Share</footer>
       </article>
     </main>
 
@@ -46,3 +56,10 @@
     </div>
   </body>
 </html>
+
+<!-- 
+commit
+add manrope font
+
+
+-->
