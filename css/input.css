@@ -16,7 +16,7 @@ main {
 /*  */
 
 .article-card {
-  @apply bg-white rounded-xl cursor-pointer aspect-[3/4] max-w-lg overflow-clip;
+  @apply bg-white rounded-xl cursor-pointer aspect-[3/4.75] max-w-lg overflow-hidden flex flex-col;
 }
 
 .article-card:hover {
@@ -32,7 +32,32 @@ main {
 }
 
 .article-body {
-  @apply px-1 pt-8 pb-4 flex flex-col gap-1;
+  @apply pt-8 px-8 flex flex-col gap-4 flex-grow;
+}
+
+.article-card-footer {
+  @apply flex justify-between items-center flex-grow-0 px-8 py-6;
+}
+
+.footer-info {
+  @apply flex gap-4;
+}
+
+.footer-info-text {
+  @apply flex flex-col;
+}
+
+.footer-info img {
+  @apply rounded-full w-10 h-10;
+}
+
+.card-icon {
+  @apply rounded-full p-2.5 bg-light-grayish-blue;
+}
+
+.card-icon img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Attribution */
